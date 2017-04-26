@@ -39,7 +39,7 @@ class Incident(Entity):
         return result
 
     def acknowledge(self, from_email,):
-        """Resolve an incident using a valid email address."""
+        """Acknowledge an incident using a valid email address."""
         endpoint = '/'.join((self.endpoint, self.id,))
 
         if from_email is None:
